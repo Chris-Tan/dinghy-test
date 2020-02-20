@@ -1,0 +1,40 @@
+{
+  "application": "spin",
+  "pipelines": [
+    {
+      "application": "spin",
+      "name": "pipeline template",
+      "keepWaitingPipelines": false,
+      "lastModifiedBy": "admin",
+      "limitConcurrent": true,
+      "stages": [
+        {
+          "name": "Pause-9",
+          "refId": "1",
+          "requisiteStageRefIds": [],
+          "type": "wait",
+          "waitTime": 3
+        },
+        {
+          "failPipeline": true,
+          "judgmentInputs": [],
+          "name": "Manual Judgment9",
+          "notifications": [],
+          "refId": "2",
+          "requisiteStageRefIds": [
+            "1"
+          ],
+          "type": "manualJudgment"
+        },
+        {
+          "name": "Pause-14",
+          "refId": "3",
+          "requisiteStageRefIds": [],
+          "type": "wait",
+          "waitTime": 4
+        },
+      ],
+      "triggers": []
+    }
+  ]
+}
