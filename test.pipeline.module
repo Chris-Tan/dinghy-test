@@ -1,9 +1,10 @@
 {
-  "application": "{{ var "application" ?: "yourspinnakerapplicationname" }}",
+  "application": "{{ var "application" ?: "spin" }}",
   "keepWaitingPipelines": false,
   "limitConcurrent": true,
   "name": "Made By Armory Pipeline Templates",
   "stages": [
+    {{ module "wait.stage.module" }}
   ],
   "triggers": []
 }
