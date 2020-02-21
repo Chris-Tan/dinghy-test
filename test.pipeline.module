@@ -1,7 +1,7 @@
 {
-  "name": "{{ var "name" ?: "spin" }}",
-  "refId": "1",
-  "requisiteStageRefIds": [],
-  "type": "wait",
-  "waitTime": {{ var "waitTime" ?: 10 }}
+    "name": "Wait",
+    "refId": "1",
+    "requisiteStageRefIds": [],
+    "type": "wait",
+    "waitTime": 42
 }
